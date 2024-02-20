@@ -1,0 +1,19 @@
+<div class="container">
+    <form [formGroup]="apiData" (ngSubmit)="onSubmit(apiData.value)">
+        <div class="ss">
+            <label for="username">User Name:</label>
+            <input type="text" formControlName="name" class="form-control" placeholder="enter name">
+        </div>
+        <div>
+            <label for="eamil">Email:</label>
+            <input type="email" formControlName="email" class="form-control" placeholder="enter eamil">
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" class="form-control" formControlName="password" placeholder="enter password">
+        </div>
+        <div class="mt-3">
+            <input type="submit" [routerLink]="rout" class="btn btn-secondary" value="submit">
+        </div>
+    </form>
+</div>

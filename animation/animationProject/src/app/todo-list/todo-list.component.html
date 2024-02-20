@@ -1,0 +1,6 @@
+<input type="text" ngModel name="in" placeholder="type here" #in (keyup.enter)="addItems(in)">
+
+<div class="list-group">
+    <button type="button" @fade *ngFor="let item of listItems;index as i" (click)="removeItems(i)"
+        class="list-group-item">{{item}} </button>
+</div>

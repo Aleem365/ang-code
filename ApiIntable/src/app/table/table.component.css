@@ -1,0 +1,8 @@
+.icon i{
+    border: 0.2rem solid rgb(252, 34, 34);
+
+}
+.icon i:hover{
+    background-color: red;
+    color: azure;
+}
